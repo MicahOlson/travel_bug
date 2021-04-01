@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-    @destination_list = HTTParty.get("http://localhost:3000/destinations")
+    @destination_list = Destination.get_destination_list
     render :index
   end
 end
