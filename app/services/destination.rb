@@ -12,7 +12,7 @@ class Destination
   #   response = HTTParty.get("http://localhost:3000/destinations={#{params[:state]}}")
   # end
 
-  # def self.get_review_list
-  #   response =
-  # end
+  def self.get_reviews_list(destination_id)
+    response = HTTParty.get("http://localhost:3000/destinations/#{destination_id}/reviews")
+  end
 end

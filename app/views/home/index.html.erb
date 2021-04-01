@@ -3,7 +3,7 @@
 <div class="destination_list">
   <% if @destination_list %>
       <% @destination_list.each do |destination| %>
-      <p><%= "#{destination["city"]}, #{destination["state"]}, #{destination["country"]}" %></p>
+      <p><%= link_to "#{destination["city"]}, #{destination["state"]}, #{destination["country"]}", "/destination/#{destination["id"]}" %></p>
       <% end %>
   <% end %>
 </div>
