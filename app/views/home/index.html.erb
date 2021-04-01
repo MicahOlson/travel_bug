@@ -1,0 +1,9 @@
+<h1>Travel Bug</h1>
+
+<div class="destination_list">
+  <% if @destination_list %>
+      <% @destination_list.each do |destination| %>
+      <p><%= "#{destination["city"]}, #{destination["state"]}, #{destination["country"]}" %></p>
+      <% end %>
+  <% end %>
+</div>

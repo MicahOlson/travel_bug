@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+  body {
+    background-color: rgb(245, 245, 245);
+    color: rgb(61, 61, 61);
+  }
+
+  .destination_list {
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
